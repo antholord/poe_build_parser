@@ -21,6 +21,7 @@ defmodule PoeBuildParser.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:poison, "~> 3.1"},
       {:credo, "~> 1.0", only: [:dev, :test], override: true},
       {:credo_envvar, "~> 0.1", only: [:dev, :test], runtime: false},
       {:credo_filename_consistency, "~> 0.1", only: [:dev, :test], runtime: false},
