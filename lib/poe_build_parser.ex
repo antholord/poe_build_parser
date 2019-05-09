@@ -16,3 +16,5 @@ defmodule PoeBuildParser do
     :world
   end
 end
+
+IO.puts(PoeBuildParser.hello())
