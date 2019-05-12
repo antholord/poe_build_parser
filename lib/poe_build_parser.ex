@@ -1,20 +1,13 @@
 defmodule PoeBuildParser do
+  import PoeBuildParser.Http.SkillTreeImporter
+
   @moduledoc """
   Documentation for PoeBuildParser.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> PoeBuildParser.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def run do
+    importSkillTree()
   end
 end
 
-IO.puts(PoeBuildParser.hello())
+PoeBuildParser.run()
