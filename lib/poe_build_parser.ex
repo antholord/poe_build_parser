@@ -1,12 +1,16 @@
 defmodule PoeBuildParser do
-  import PoeBuildParser.Http.SkillTreeImporter
+  import PoeBuildParser.SkillTree.SkillTreeImporter
+  import LeagueScraper
 
   @moduledoc """
   Documentation for PoeBuildParser.
   """
 
   def run do
-    importSkillTree()
+    getPlayerProfiles("synthesis", 1)
+    |> IO.puts()
+
+    # skillTree = importSkillTree()
   end
 end
 
